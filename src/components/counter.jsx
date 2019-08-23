@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 
-export default class Counter extends Component {
+class Counter extends Component {
+  state = {
+    count: 0
+  };
   render() {
-    return <div />;
+    return (
+      <React.Fragment>
+        <span>Hello World</span>
+        <button>Increment</button>
+      </React.Fragment>
+    );
   }
 }
+
+export default Counter;
