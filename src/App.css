@@ -25,7 +25,7 @@
 
 .container {
   padding: 50px 80px;
-  width: 100px;
+  width: 700px;
   height: 600px;
   box-shadow: 1px solid burlywood;
   background-color: rgb(233, 215, 215);
@@ -42,6 +42,10 @@
 }
 .navbar-brand {
   font-size: 40px;
+}
+
+.form {
+  width: 70px;
 }
 
 @keyframes App-logo-spin {
