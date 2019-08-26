@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from 'react-bootstrap/Form';
 
 class Counter extends Component {
   // doHandleIncrement = () => {
@@ -8,6 +9,14 @@ class Counter extends Component {
   render() {
     return (
       <div>
+        <Form.Group controlId='formBasicPassword'>
+          {/* <Form.Label>Name of Item Selected from Counter</Form.Label> */}
+          <Form.Control
+            type='text'
+            placeholder='Name of Item Selected from Counter'
+          />
+        </Form.Group>
+
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           onClick={() => this.props.onIncrement(this.props.counter)}
@@ -15,6 +24,7 @@ class Counter extends Component {
         >
           Increment
         </button>
+
         <button
           onClick={() => this.props.onDelete(this.props.counter.id)}
           className='btn btn-danger btn-sm m-2'

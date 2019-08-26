@@ -35,7 +35,7 @@ class App extends Component {
   };
   render() {
     return (
-      <React.Fragment>
+      <div className='fullview'>
         <Navbar
           totalCounters={this.state.counters.filter(c => c.value > 0).length}
         />
@@ -47,7 +47,7 @@ class App extends Component {
             onDelete={this.handleDelete}
           />
         </main>
-      </React.Fragment>
+      </div>
     );
   }
 }
